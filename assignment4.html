@@ -1,0 +1,108 @@
+<html>
+<head>
+<title> jquery Practice</title>
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+<script src="assignment4.js">
+
+</script>
+</head>
+<body>
+
+<p id="ex1"> y </p>
+<script type="text/javascript">
+
+//Task 1
+  function task1(x){
+    return ((5 * x) - (3 * x ** 2) + 13);}
+//Task2
+  function task2(a, b, c){
+        return "Hello" + " " + a + " " +  b + " " + c;
+      };
+//Task 3
+  function task3(g, h){
+      if (g > h) {
+        $(document).ready(function(){
+          $("#ex3").text("banana"),
+          $("#ex3").css("color","yellow");
+        });
+      }
+      else if (g < h) {
+        $(document).ready(function(){
+          $("#ex3").text("porcupine"),
+          $("#ex3").css("color","brown");});
+      }
+      else if ( g == h && g < 0 && h < 0){
+        $(document).ready(function(){
+          $("#ex3").text("apple"),
+          $("#ex3").css("color","red");});
+      }
+      else {
+        $(document).ready(function(){
+          $("#ex3").text("green apple"),
+          $("#ex3").css("color","green");});
+      }};
+
+    //Task 4
+    var inp4 = "123456787654";
+    var pos4 = inp4.startsWith("1");
+    function task4(u,s){
+        if(u.length === 10)
+          {
+        $(document).ready(function(){
+          $("#ex4").text(inp4),
+          $("#ex4").css("color","green");
+        }
+      )
+        }
+        else if (u.length === 11 && Boolean(s) == true){
+        //return e.fontcolor("green");
+        $(document).ready(function(){
+          $("#ex4").text(inp4),
+          $("#ex4").css("color","green");
+        })
+        }
+        else
+         {
+          //return  e.fontcolor("red");
+          $(document).ready(function(){
+            $("#ex4").text(inp4),
+            $("#ex4").css("color","red");
+          })
+         }
+       };
+
+       //Task 5
+         var arrayin = ["one", "two", "three", "four", "five"];
+         var arrayout = arrayin.slice(2,3);
+    function task5(){
+      return arrayout;
+    };
+</script>
+<p id="ex2">x</p>
+
+<p id="ex3">x</p>
+
+<p id="ex4">x</p>
+
+<p id="ex5">x</p>
+
+<!--script>
+
+  $(document).on({
+    $("#b1").click(function click1() {
+          $("#b2").css("style-color", "blue");
+        })
+    });
+
+</script-->
+<button id="b1">1. Blue</button>
+<button id="b2">2. Blue</button>
+<button id="b3">3. Blue</button>
+<button id="b4">4. Blue</button>
+<button id="b5">5. Red</button>
+
+
+
+
+</body>
+</html>
